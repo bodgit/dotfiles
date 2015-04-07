@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Work out the directory containing this script
 dir=$(cd $(dirname ${0}); pwd -P)
