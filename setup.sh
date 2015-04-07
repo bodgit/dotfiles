@@ -10,5 +10,6 @@ else
 	readonly -a base=(${dir} ${dir})
 fi
 
+ln -sfv ${base[0]}/rainbarf.conf ~/.rainbarf.conf
 ln -sfv ${base[0]}/tmux.conf ~/.tmux.conf
 ln -sfv ${base[0]}/vimrc ~/.vimrc
