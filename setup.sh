@@ -1,14 +1,14 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Work out the directory containing this script
-dir=$(cd $(dirname ${0}); pwd -P)
+readonly dir=$(cd $(dirname ${0}); pwd -P)
 
 # If that directory is underneath $HOME then use relative symlinks
 if [ "${dir#${HOME}}" != "${dir}" ]; then
-	base=${dir#${HOME%/}/}
+	readonly -a base=(${dir#${HOME%/}/} "../${dir#${HOME%/}/}")
 else
-	base=${dir}
+	readonly -a base=(${dir} ${dir})
 fi
 
-ln -sfv ${base}/tmux.conf ~/.tmux.conf
-ln -sfv ${base}/vimrc ~/.vimrc
+ln -sfv ${base[0]}/tmux.conf ~/.tmux.conf
+ln -sfv ${base[0]}/vimrc ~/.vimrc
