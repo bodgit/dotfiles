@@ -21,4 +21,4 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = matt
-	smtpsslcertpath = ''
+	smtpsslcertpath = ""
