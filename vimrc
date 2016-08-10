@@ -12,3 +12,4 @@ set viminfo='100,<500,s100,h
 filetype plugin indent on
 
 autocmd BufRead,BufNewFile *.pp set nodigraph
+autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
