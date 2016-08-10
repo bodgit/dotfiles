@@ -1,6 +1,7 @@
 [user]
 	name = Matt Dainty
 	email = matt@bodgit-n-scarper.com
+	signingkey = 6624586D
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustexitcode = true
