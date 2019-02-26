@@ -15,6 +15,7 @@ chmod go-rwx ~/.gnupg
 ln -sfv ${base[1]}/gpg.conf ~/.gnupg/gpg.conf
 ln -sfv ${base[0]}/gitconfig ~/.gitconfig
 ln -sfv ${base[0]}/rainbarf.conf ~/.rainbarf.conf
+ln -sfv ${base[0]}/terraformrc ~/.terraformrc
 ln -sfv ${base[0]}/tmux.conf ~/.tmux.conf
 for d in ~/.vim/autoload ~/.vim/bundle ; do
   [ -d ${d} ] || mkdir -p ${d}
