@@ -19,5 +19,12 @@ ln -sfv ${base[0]}/tmux.conf ~/.tmux.conf
 for d in ~/.vim/autoload ~/.vim/bundle ; do
   [ -d ${d} ] || mkdir -p ${d}
 done
-ln -sfv ${base[2]}/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload/
+ln -sfv ${base[2]}/tabular ~/.vim/bundle
+ln -sfv ${base[2]}/vim-airline ~/.vim/bundle
+ln -sfv ${base[2]}/vim-airline-themes ~/.vim/bundle
+ln -sfv ${base[2]}/vim-colors-solarized ~/.vim/bundle
+ln -sfv ${base[2]}/vim-fugitive ~/.vim/bundle
+ln -sfv ${base[2]}/vim-go ~/.vim/bundle
+ln -sfv ${base[2]}/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload
+ln -sfv ${base[2]}/vim-surround ~/.vim/bundle
 ln -sfv ${base[0]}/vimrc ~/.vimrc
