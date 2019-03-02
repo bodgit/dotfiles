@@ -20,4 +20,7 @@ filetype plugin indent on
 autocmd BufRead,BufNewFile *.pp set nodigraph
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command="goimports"
+
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1

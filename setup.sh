@@ -28,4 +28,5 @@ ln -sfv ${base[2]}/vim-fugitive ~/.vim/bundle
 ln -sfv ${base[2]}/vim-go ~/.vim/bundle
 ln -sfv ${base[2]}/vim-pathogen/autoload/pathogen.vim ~/.vim/autoload
 ln -sfv ${base[2]}/vim-surround ~/.vim/bundle
+ln -sfv ${base[2]}/vim-terraform ~/.vim/bundle
 ln -sfv ${base[0]}/vimrc ~/.vimrc
